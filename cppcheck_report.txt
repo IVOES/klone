@@ -1,0 +1,2174 @@
+build/libcrypto.c:7:9: style: Variable 'ver' is assigned a value that is never used. [unreadVariable]
+    ver = SSLeay();
+        ^
+build/libcyassl.c:16:7: style: Variable 'f' is reassigned a value before the old one has been used. [redundantAssignment]
+    f = CyaSSL_CTX_load_verify_buffer;
+      ^
+build/libcyassl.c:13:7: note: f is assigned
+    f = SetErrorString;
+      ^
+build/libcyassl.c:16:7: note: f is overwritten
+    f = CyaSSL_CTX_load_verify_buffer;
+      ^
+build/libcyassl.c:19:7: style: Variable 'f' is reassigned a value before the old one has been used. [redundantAssignment]
+    f = SSL_CTX_set_default_passwd_cb;
+      ^
+build/libcyassl.c:16:7: note: f is assigned
+    f = CyaSSL_CTX_load_verify_buffer;
+      ^
+build/libcyassl.c:19:7: note: f is overwritten
+    f = SSL_CTX_set_default_passwd_cb;
+      ^
+build/libcyassl.c:29:5: style:inconclusive: Statements following return, break, continue, goto or throw will never be executed. [unreachableCode]
+    printf("openssl/ssl.h doesn't seem to be the one from CyaSSL\n");
+    ^
+build/libcyassl.c:9:16: style: Variable 'c' is assigned a value that is never used. [unreadVariable]
+    SSL_CTX *c = 0;
+               ^
+build/libcyassl.c:19:7: style: Variable 'f' is assigned a value that is never used. [unreadVariable]
+    f = SSL_CTX_set_default_passwd_cb;
+      ^
+build/libopenssl.c:17:9: style: Variable 'ver' is assigned a value that is never used. [unreadVariable]
+    ver = SSLeay();
+        ^
+contrib/iocat/iocat.c:220:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+contrib/iocat/iocat.c:131:19: style: Unused variable: key [unusedVariable]
+    unsigned char key[CODEC_CIPHER_KEY_BUFSZ];
+                  ^
+contrib/iocat/iocat.c:132:19: style: Unused variable: iv [unusedVariable]
+    unsigned char iv[CODEC_CIPHER_IV_LEN];
+                  ^
+contrib/iowc/iowc.c:98:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/atom.c:40:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/atom.c:64:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/atom.c:74:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/atom.c:97:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/atom.c:119:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/atom.c:135:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/atom.c:151:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/atom.c:171:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/atom.c:193:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/child.c:57:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/child.c:78:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/child.c:98:1: style: Label 'notfound' is not used. [unusedLabel]
+notfound:
+^
+src/kloned/child.c:128:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/child.c:148:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/entry.c:137:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/kloned/entry.c:439:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/kloned/entry.c:338:17: style: The scope of the variable 'name' can be reduced. [variableScope]
+    const char *name, *desc;
+                ^
+src/kloned/entry.c:338:24: style: The scope of the variable 'desc' can be reduced. [variableScope]
+    const char *name, *desc;
+                       ^
+src/kloned/entry.c:176:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/entry.c:206:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/entry.c:321:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/entry.c:389:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/main.c:55:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/main.c:70:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/main.c:84:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/main.c:131:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/kloned/main.c:175:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc.c:38:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc.c:133:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc.c:155:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc_access_log.c:53:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc_access_log.c:89:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc_fork_child.c:48:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc_fork_child.c:76:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc_log_add.c:71:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc_log_add.c:104:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc_log_get.c:63:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc_log_get.c:100:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/ppc_nop.c:44:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:1267:18: warning: sscanf() without field width limits can crash with huge input data. [invalidscanf]
+        i > 0 && sscanf(list, "%[^ \t]", name);
+                 ^
+src/kloned/server.c:763:12: warning: Either the condition 'be==NULL' is redundant or there is possible null pointer dereference: be. [nullPointerRedundantCheck]
+        if(be->ld == fd)
+           ^
+src/kloned/server.c:766:11: note: Assuming that condition 'be==NULL' is not redundant
+    if(be == NULL) /* a child is ppc-calling */
+          ^
+src/kloned/server.c:763:12: note: Null pointer dereference
+        if(be->ld == fd)
+           ^
+src/kloned/server.c:740:12: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+    } else if(n == 0) {
+           ^
+src/kloned/server.c:744:7: note: Found duplicate branches for 'if' and 'else'.
+    } else {
+      ^
+src/kloned/server.c:740:12: note: Found duplicate branches for 'if' and 'else'.
+    } else if(n == 0) {
+           ^
+src/kloned/server.c:299:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:647:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/kloned/server.c:669:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:689:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:714:1: style: Label 'err' is not used. [unusedLabel]
+err: /* fall through if search loop exhausted */
+^
+src/kloned/server.c:750:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:780:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:981:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/kloned/server.c:1030:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/kloned/server.c:1055:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:1091:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:1113:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:1135:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:1177:1: style: Label 'err' is not used. [unusedLabel]
+err: /* fall through if search loop exhausted */
+^
+src/kloned/server.c:1321:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/kloned/server.c:481:16: style: The scope of the variable 'obe' can be reduced. [variableScope]
+    backend_t *obe; /* other backed */
+               ^
+src/kloned/server.c:87:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:106:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:125:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:340:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:416:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/kloned/server.c:473:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:538:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/kloned/server.c:577:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:601:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:830:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:860:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/server.c:189:15: style: Variable 'pid' is assigned a value that is never used. [unreadVariable]
+    pid_t pid = -1;
+              ^
+src/libbackend/backend.c:50:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libbackend/backend.c:119:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libbackend/backend.c:134:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/cipher.c:87:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/cipher.c:133:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/cipher.c:224:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/cipher_cyassl.c:38:16: style: The scope of the variable 'len' can be reduced. [variableScope]
+    size_t sz, len, orig_len, c;
+               ^
+src/libcodec/cipher_cyassl.c:38:31: style: The scope of the variable 'c' can be reduced. [variableScope]
+    size_t sz, len, orig_len, c;
+                              ^
+src/libcodec/cipher_cyassl.c:39:16: style: The scope of the variable 'pad' can be reduced. [variableScope]
+    char *ptr, pad;
+               ^
+src/libcodec/cipher_cyassl.c:40:10: style: The scope of the variable 'padding' can be reduced. [variableScope]
+    char padding[AES_BLOCK_SIZE];
+         ^
+src/libcodec/cipher_cyassl.c:100:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/cipher_cyassl.c:125:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/cipher_cyassl.c:213:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/cipher_cyassl.c:38:21: style: Unused variable: orig_len [unusedVariable]
+    size_t sz, len, orig_len, c;
+                    ^
+src/libcodec/gzip.c:72:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libcodec/gzip.c:104:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/gzip.c:121:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/gzip.c:176:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/null.c:50:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libcodec/null.c:91:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libemb/emb.c:47:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libemb/emb.c:63:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libemb/emb.c:80:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libemb/emb.c:92:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libemb/emb.c:112:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libemb/emb.c:141:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libemb/emb.c:170:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libemb/emb.c:246:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhook/child_nfy.c:31:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhook/child_nfy.c:57:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhook/child_nfy.c:23:13: style: Unused variable: hook [unusedVariable]
+    hook_t *hook;
+            ^
+src/libhook/child_nfy.c:49:13: style: Unused variable: hook [unusedVariable]
+    hook_t *hook;
+            ^
+src/libhook/hook.c:18:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhook/hook.c:29:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhook/req.c:27:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhook/req.c:19:13: style: Unused variable: hook [unusedVariable]
+    hook_t *hook;
+            ^
+src/libhook/server_nfy.c:26:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhook/server_nfy.c:51:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhook/server_nfy.c:76:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhook/server_nfy.c:18:13: style: Unused variable: hook [unusedVariable]
+    hook_t *hook;
+            ^
+src/libhook/server_nfy.c:43:13: style: Unused variable: hook [unusedVariable]
+    hook_t *hook;
+            ^
+src/libhook/server_nfy.c:68:13: style: Unused variable: hook [unusedVariable]
+    hook_t *hook;
+            ^
+src/libhttp/access.c:147:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libhttp/broker.c:168:9: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int i;
+        ^
+src/libhttp/broker.c:54:1: style: Label 'notfound' is not used. [unusedLabel]
+notfound:
+^
+src/libhttp/broker.c:112:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libhttp/broker.c:160:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libhttp/cgi.c:51:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/dypage.c:80:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:568:8: style: The if condition is the same as the previous if condition [duplicateCondition]
+    if(cgi)
+       ^
+src/libhttp/http.c:564:8: note: First condition
+    if(cgi)
+       ^
+src/libhttp/http.c:568:8: note: Second condition
+    if(cgi)
+       ^
+src/libhttp/http.c:611:8: style: Variable 'rc' is reassigned a value before the old one has been used. [redundantAssignment]
+    rc = broker_serve(h->broker, h, rq, rs);
+       ^
+src/libhttp/http.c:584:8: note: rc is assigned
+    rc = HTTP_STATUS_BAD_REQUEST;
+       ^
+src/libhttp/http.c:611:8: note: rc is overwritten
+    rc = broker_serve(h->broker, h, rq, rs);
+       ^
+src/libhttp/http.c:149:11: style: The scope of the variable 'p' can be reduced. [variableScope]
+    char *p, hostcp[128];
+          ^
+src/libhttp/http.c:149:14: style: The scope of the variable 'hostcp' can be reduced. [variableScope]
+    char *p, hostcp[128];
+             ^
+src/libhttp/http.c:407:10: style: The scope of the variable 's' can be reduced. [variableScope]
+    char s[URI_MAX], *sp = NULL;
+         ^
+src/libhttp/http.c:133:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:142:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:177:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:217:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:243:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:272:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:286:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:320:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:354:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:377:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:398:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:476:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:656:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libhttp/http.c:753:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:794:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:825:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:856:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:877:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:895:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:913:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:501:24: style: Variable 'gwi' is assigned a value that is never used. [unreadVariable]
+    if(fd == 0 && (gwi = getenv("GATEWAY_INTERFACE")) != NULL)
+                       ^
+src/libhttp/http.c:942:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/http.c:959:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:52:17: style: The scope of the variable 'dir' can be reduced. [variableScope]
+    const char *dir;
+                ^
+src/libhttp/sup_cgi.c:136:9: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int i, nl, vl;
+        ^
+src/libhttp/sup_cgi.c:235:10: style: The scope of the variable 'buf' can be reduced. [variableScope]
+    char buf[32];
+         ^
+src/libhttp/sup_cgi.c:266:14: style: The scope of the variable 'field' can be reduced. [variableScope]
+    field_t *field;
+             ^
+src/libhttp/sup_cgi.c:375:17: style: The scope of the variable 'argv' can be reduced. [variableScope]
+    const char *argv[] = { NULL, NULL, NULL };
+                ^
+src/libhttp/sup_cgi.c:377:11: style: The scope of the variable 'p' can be reduced. [variableScope]
+    char *p, *cgi_path = NULL;
+          ^
+src/libhttp/sup_cgi.c:379:9: style: The scope of the variable 'fd' can be reduced. [variableScope]
+    int fd;
+        ^
+src/libhttp/sup_cgi.c:44:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:86:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:128:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:169:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:217:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:229:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:245:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:258:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:357:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:474:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_cgi.c:593:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_emb.c:201:8: style: Condition 'gzip' is always false [knownConditionTrueFalse]
+    if(gzip)
+       ^
+src/libhttp/sup_emb.c:147:21: note: Assignment 'gzip=NULL', assigned value is 0
+    codec_t *gzip = NULL, *decrypt = NULL;
+                    ^
+src/libhttp/sup_emb.c:166:31: note: Assuming condition is false
+    if(request_get_method(rq) == HM_HEAD)
+                              ^
+src/libhttp/sup_emb.c:201:8: note: Condition 'gzip' is always false
+    if(gzip)
+       ^
+src/libhttp/sup_emb.c:207:8: style: Condition 'decrypt' is always false [knownConditionTrueFalse]
+    if(decrypt)
+       ^
+src/libhttp/sup_emb.c:147:38: note: Assignment 'decrypt=NULL', assigned value is 0
+    codec_t *gzip = NULL, *decrypt = NULL;
+                                     ^
+src/libhttp/sup_emb.c:166:31: note: Assuming condition is false
+    if(request_get_method(rq) == HM_HEAD)
+                              ^
+src/libhttp/sup_emb.c:207:8: note: Condition 'decrypt' is always false
+    if(decrypt)
+       ^
+src/libhttp/sup_emb.c:61:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_emb.c:103:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_emb.c:141:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_emb.c:223:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libhttp/sup_emb.c:251:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_emb.c:285:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_emb.c:149:20: style: Variable 'decrypting' is assigned a value that is never used. [unreadVariable]
+    int decrypting = 0, ec = ~0;
+                   ^
+src/libhttp/sup_emb.c:149:28: style: Variable 'ec' is assigned a value that is never used. [unreadVariable]
+    int decrypting = 0, ec = ~0;
+                           ^
+src/libhttp/sup_emb.c:211:20: style: Variable 'decrypting' is assigned a value that is never used. [unreadVariable]
+        decrypting = 1;
+                   ^
+src/libhttp/sup_emb.c:150:10: style: Unused variable: key [unusedVariable]
+    char key[CODEC_CIPHER_KEY_BUFSZ];
+         ^
+src/libhttp/sup_emb.c:186:16: style: Variable 'ec' is assigned a value that is never used. [unreadVariable]
+            ec = 0;
+               ^
+src/libhttp/sup_fs.c:94:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_kilt.c:195:9: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int i;
+        ^
+src/libhttp/sup_kilt.c:52:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_kilt.c:161:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/sup_kilt.c:188:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/vhost.c:15:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/vhost.c:27:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/vhost.c:50:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/vhost.c:94:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/vhost.c:107:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libhttp/vhost.c:34:14: style: Unused variable: first [unusedVariable]
+    vhost_t *first, *last, *elm;
+             ^
+src/libio/io.c:66:13: style: The scope of the variable 'c' can be reduced. [variableScope]
+    ssize_t c;
+            ^
+src/libio/io.c:137:13: style: The scope of the variable 'c' can be reduced. [variableScope]
+    ssize_t c;
+            ^
+src/libio/io.c:295:13: style: The scope of the variable 'ct' can be reduced. [variableScope]
+    ssize_t ct;
+            ^
+src/libio/io.c:394:9: style: The scope of the variable 'er' can be reduced. [variableScope]
+    int er;
+        ^
+src/libio/io.c:575:12: style: The scope of the variable 'wr' can be reduced. [variableScope]
+    size_t wr;
+           ^
+src/libio/io.c:724:13: style: The scope of the variable 'c' can be reduced. [variableScope]
+    ssize_t c;
+            ^
+src/libio/io.c:760:13: style: The scope of the variable 'c' can be reduced. [variableScope]
+    ssize_t c = 0;
+            ^
+src/libio/io.c:856:11: style: The scope of the variable 'p' can be reduced. [variableScope]
+    char *p, *base = buf;
+          ^
+src/libio/io.c:984:14: style: The scope of the variable 'codec' can be reduced. [variableScope]
+    codec_t *codec;
+             ^
+src/libio/io.c:85:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:156:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:182:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:204:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:224:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:240:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:288:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:316:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:338:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:387:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:426:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:450:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:498:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:553:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:603:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:671:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libio/io.c:708:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:741:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:784:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:834:1: style: Label 'end' is not used. [unusedLabel]
+end:
+^
+src/libio/io.c:912:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:1032:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:1063:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:1083:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:1110:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/io.c:759:15: style: Variable 'sz' is assigned a value that is never used. [unreadVariable]
+    size_t sz = 0, rem = size;
+              ^
+src/libio/io.c:760:15: style: Variable 'c' is assigned a value that is never used. [unreadVariable]
+    ssize_t c = 0;
+              ^
+src/libio/io.c:640:16: error: va_list 'apcpy' used before va_start() was called. [va_list_usedBeforeStarted]
+    kl_va_copy(apcpy, ap);
+               ^
+src/libio/io.c:654:43: error: va_list 'apcpy' used before va_start() was called. [va_list_usedBeforeStarted]
+        if((sz = vsnprintf(bbuf, sz, fmt, apcpy)) > 0)
+                                          ^
+src/libio/io.c:668:5: error: va_list 'apcpy' used before va_start() was called. [va_list_usedBeforeStarted]
+    va_end(apcpy);
+    ^
+src/libio/io.c:633:19: error: va_list 'apcpy' used before va_start() was called. [va_list_usedBeforeStarted]
+    u_unused_args(apcpy);
+                  ^
+src/libio/io.c:637:5: error: va_list 'apcpy' used before va_start() was called. [va_list_usedBeforeStarted]
+    apcpy = ap;
+    ^
+src/libio/iofd.c:55:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iofd.c:78:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iofd.c:132:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iofd.c:165:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libio/iofd.c:36:36: style:inconclusive: Function 'io_fd_read' argument 1 names different: declaration 'io' definition 'ifd'. [funcArgNamesDifferent]
+static ssize_t io_fd_read(io_fd_t *ifd, char *buf, size_t size)
+                                   ^
+src/libio/iofd.c:29:36: note: Function 'io_fd_read' argument 1 names different: declaration 'io' definition 'ifd'.
+static ssize_t io_fd_read(io_fd_t *io, char *buf, size_t size);
+                                   ^
+src/libio/iofd.c:36:36: note: Function 'io_fd_read' argument 1 names different: declaration 'io' definition 'ifd'.
+static ssize_t io_fd_read(io_fd_t *ifd, char *buf, size_t size)
+                                   ^
+src/libio/iofd.c:59:37: style:inconclusive: Function 'io_fd_write' argument 1 names different: declaration 'io' definition 'ifd'. [funcArgNamesDifferent]
+static ssize_t io_fd_write(io_fd_t *ifd, const char *buf, size_t size)
+                                    ^
+src/libio/iofd.c:30:37: note: Function 'io_fd_write' argument 1 names different: declaration 'io' definition 'ifd'.
+static ssize_t io_fd_write(io_fd_t *io, const char *buf, size_t size);
+                                    ^
+src/libio/iofd.c:59:37: note: Function 'io_fd_write' argument 1 names different: declaration 'io' definition 'ifd'.
+static ssize_t io_fd_write(io_fd_t *ifd, const char *buf, size_t size)
+                                    ^
+src/libio/iofd.c:82:36: style:inconclusive: Function 'io_fd_seek' argument 1 names different: declaration 'io' definition 'ifd'. [funcArgNamesDifferent]
+static ssize_t io_fd_seek(io_fd_t *ifd, size_t off)
+                                   ^
+src/libio/iofd.c:31:36: note: Function 'io_fd_seek' argument 1 names different: declaration 'io' definition 'ifd'.
+static ssize_t io_fd_seek(io_fd_t *io, size_t off);
+                                   ^
+src/libio/iofd.c:82:36: note: Function 'io_fd_seek' argument 1 names different: declaration 'io' definition 'ifd'.
+static ssize_t io_fd_seek(io_fd_t *ifd, size_t off)
+                                   ^
+src/libio/iofd.c:89:36: style:inconclusive: Function 'io_fd_tell' argument 1 names different: declaration 'io' definition 'ifd'. [funcArgNamesDifferent]
+static ssize_t io_fd_tell(io_fd_t *ifd)
+                                   ^
+src/libio/iofd.c:32:36: note: Function 'io_fd_tell' argument 1 names different: declaration 'io' definition 'ifd'.
+static ssize_t io_fd_tell(io_fd_t *io);
+                                   ^
+src/libio/iofd.c:89:36: note: Function 'io_fd_tell' argument 1 names different: declaration 'io' definition 'ifd'.
+static ssize_t io_fd_tell(io_fd_t *ifd)
+                                   ^
+src/libio/iofd.c:97:33: style:inconclusive: Function 'io_fd_close' argument 1 names different: declaration 'io' definition 'ifd'. [funcArgNamesDifferent]
+static int io_fd_close(io_fd_t *ifd)
+                                ^
+src/libio/iofd.c:33:33: note: Function 'io_fd_close' argument 1 names different: declaration 'io' definition 'ifd'.
+static int io_fd_close(io_fd_t *io);
+                                ^
+src/libio/iofd.c:97:33: note: Function 'io_fd_close' argument 1 names different: declaration 'io' definition 'ifd'.
+static int io_fd_close(io_fd_t *ifd)
+                                ^
+src/libio/iofd.c:118:32: style:inconclusive: Function 'io_fd_free' argument 1 names different: declaration 'io' definition 'ifd'. [funcArgNamesDifferent]
+static int io_fd_free(io_fd_t *ifd)
+                               ^
+src/libio/iofd.c:34:32: note: Function 'io_fd_free' argument 1 names different: declaration 'io' definition 'ifd'.
+static int io_fd_free(io_fd_t *io);
+                               ^
+src/libio/iofd.c:118:32: note: Function 'io_fd_free' argument 1 names different: declaration 'io' definition 'ifd'.
+static int io_fd_free(io_fd_t *ifd)
+                               ^
+src/libio/iomem.c:57:11: style: The scope of the variable 'ptr' can be reduced. [variableScope]
+    char *ptr;
+          ^
+src/libio/iomem.c:76:11: style: The scope of the variable 'ptr' can be reduced. [variableScope]
+    char *ptr;
+          ^
+src/libio/iomem.c:120:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iomem.c:132:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iomem.c:161:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iomem.c:43:38: style:inconclusive: Function 'io_mem_seek' argument 1 names different: declaration 'io' definition 'im'. [funcArgNamesDifferent]
+static ssize_t io_mem_seek(io_mem_t *im, size_t off)
+                                     ^
+src/libio/iomem.c:31:38: note: Function 'io_mem_seek' argument 1 names different: declaration 'io' definition 'im'.
+static ssize_t io_mem_seek(io_mem_t *io, size_t off);
+                                     ^
+src/libio/iomem.c:43:38: note: Function 'io_mem_seek' argument 1 names different: declaration 'io' definition 'im'.
+static ssize_t io_mem_seek(io_mem_t *im, size_t off)
+                                     ^
+src/libio/iomem.c:55:38: style:inconclusive: Function 'io_mem_read' argument 1 names different: declaration 'io' definition 'im'. [funcArgNamesDifferent]
+static ssize_t io_mem_read(io_mem_t *im, char *buf, size_t size)
+                                     ^
+src/libio/iomem.c:29:38: note: Function 'io_mem_read' argument 1 names different: declaration 'io' definition 'im'.
+static ssize_t io_mem_read(io_mem_t *io, char *buf, size_t size);
+                                     ^
+src/libio/iomem.c:55:38: note: Function 'io_mem_read' argument 1 names different: declaration 'io' definition 'im'.
+static ssize_t io_mem_read(io_mem_t *im, char *buf, size_t size)
+                                     ^
+src/libio/iomem.c:74:39: style:inconclusive: Function 'io_mem_write' argument 1 names different: declaration 'io' definition 'im'. [funcArgNamesDifferent]
+static ssize_t io_mem_write(io_mem_t *im, const char *buf, size_t size)
+                                      ^
+src/libio/iomem.c:30:39: note: Function 'io_mem_write' argument 1 names different: declaration 'io' definition 'im'.
+static ssize_t io_mem_write(io_mem_t *io, const char *buf, size_t size);
+                                      ^
+src/libio/iomem.c:74:39: note: Function 'io_mem_write' argument 1 names different: declaration 'io' definition 'im'.
+static ssize_t io_mem_write(io_mem_t *im, const char *buf, size_t size)
+                                      ^
+src/libio/iomem.c:93:35: style:inconclusive: Function 'io_mem_close' argument 1 names different: declaration 'io' definition 'im'. [funcArgNamesDifferent]
+static int io_mem_close(io_mem_t *im)
+                                  ^
+src/libio/iomem.c:33:35: note: Function 'io_mem_close' argument 1 names different: declaration 'io' definition 'im'.
+static int io_mem_close(io_mem_t *io);
+                                  ^
+src/libio/iomem.c:93:35: note: Function 'io_mem_close' argument 1 names different: declaration 'io' definition 'im'.
+static int io_mem_close(io_mem_t *im)
+                                  ^
+src/libio/iomem.c:98:34: style:inconclusive: Function 'io_mem_free' argument 1 names different: declaration 'io' definition 'im'. [funcArgNamesDifferent]
+static int io_mem_free(io_mem_t *im)
+                                 ^
+src/libio/iomem.c:34:34: note: Function 'io_mem_free' argument 1 names different: declaration 'io' definition 'im'.
+static int io_mem_free(io_mem_t *io);
+                                 ^
+src/libio/iomem.c:98:34: note: Function 'io_mem_free' argument 1 names different: declaration 'io' definition 'im'.
+static int io_mem_free(io_mem_t *im)
+                                 ^
+src/libio/iossl.c:43:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iossl.c:63:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iossl.c:83:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iossl.c:99:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iossl.c:117:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libio/iossl.c:141:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libio/iossl.c:165:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libio/iossl.c:210:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libio/iossl.c:47:38: style:inconclusive: Function 'io_ssl_read' argument 1 names different: declaration 'io' definition 'io_ssl'. [funcArgNamesDifferent]
+static ssize_t io_ssl_read(io_ssl_t *io_ssl, char *buf, size_t size)
+                                     ^
+src/libio/iossl.c:27:38: note: Function 'io_ssl_read' argument 1 names different: declaration 'io' definition 'io_ssl'.
+static ssize_t io_ssl_read(io_ssl_t *io, char *buf, size_t size);
+                                     ^
+src/libio/iossl.c:47:38: note: Function 'io_ssl_read' argument 1 names different: declaration 'io' definition 'io_ssl'.
+static ssize_t io_ssl_read(io_ssl_t *io_ssl, char *buf, size_t size)
+                                     ^
+src/libio/iossl.c:67:39: style:inconclusive: Function 'io_ssl_write' argument 1 names different: declaration 'io' definition 'io_ssl'. [funcArgNamesDifferent]
+static ssize_t io_ssl_write(io_ssl_t *io_ssl, const char *buf, size_t size)
+                                      ^
+src/libio/iossl.c:28:39: note: Function 'io_ssl_write' argument 1 names different: declaration 'io' definition 'io_ssl'.
+static ssize_t io_ssl_write(io_ssl_t *io, const char *buf, size_t size);
+                                      ^
+src/libio/iossl.c:67:39: note: Function 'io_ssl_write' argument 1 names different: declaration 'io' definition 'io_ssl'.
+static ssize_t io_ssl_write(io_ssl_t *io_ssl, const char *buf, size_t size)
+                                      ^
+src/libio/iossl.c:173:12: style: Variable 'rc' is assigned a value that is never used. [unreadVariable]
+    int rc = 0;
+           ^
+src/libio/iossl.c:174:10: style: Unused variable: vfy [unusedVariable]
+    long vfy;
+         ^
+src/libklog/common.c:46:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:99:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:124:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:149:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:176:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:222:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:243:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:266:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:297:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:312:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/file.c:294:18: error: Expression 'klf->wpageid=++(klf->wpageid)%klf->npages' depends on order of evaluation of side effects [unknownEvaluationOrder]
+    klf->wpageid = ++(klf->wpageid)%klf->npages;    /* increment page id */
+                 ^
+src/libklog/file.c:128:31: style:inconclusive: Function 'klog_file' argument 1 names different: declaration 'klf' definition 'kl'. [funcArgNamesDifferent]
+static int klog_file (klog_t *kl, int level, const char *fmt, va_list ap)
+                              ^
+src/libklog/file.c:21:31: note: Function 'klog_file' argument 1 names different: declaration 'klf' definition 'kl'.
+static int klog_file (klog_t *klf, int level, const char *fmt, va_list ap);
+                              ^
+src/libklog/file.c:128:31: note: Function 'klog_file' argument 1 names different: declaration 'klf' definition 'kl'.
+static int klog_file (klog_t *kl, int level, const char *fmt, va_list ap)
+                              ^
+src/libklog/file.c:180:38: style:inconclusive: Function 'klog_close_file' argument 1 names different: declaration 'klf' definition 'kl'. [funcArgNamesDifferent]
+static void klog_close_file (klog_t *kl)
+                                     ^
+src/libklog/file.c:20:38: note: Function 'klog_close_file' argument 1 names different: declaration 'klf' definition 'kl'.
+static void klog_close_file (klog_t *klf);
+                                     ^
+src/libklog/file.c:180:38: note: Function 'klog_close_file' argument 1 names different: declaration 'klf' definition 'kl'.
+static void klog_close_file (klog_t *kl)
+                                     ^
+src/libklog/klog.c:89:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libklog/klog.c:138:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libklog/klog.c:299:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/klog.c:430:1: style: Label 'end' is not used. [unusedLabel]
+end:
+^
+src/libklog/klog.c:484:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/klog.c:399:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libklog/mem.c:57:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/mem.c:84:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/mem.c:208:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/syslog.c:60:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/test/main.c:55:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libklog/test/main.c:120:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/field.c:55:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/field.c:97:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/field.c:168:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/field.c:74:49: style:inconclusive: Function 'field_set_from_line' argument 2 names different: declaration 'line' definition 'ln'. [funcArgNamesDifferent]
+int field_set_from_line(field_t *f, const char *ln)
+                                                ^
+src/libpage/field.c:18:47: note: Function 'field_set_from_line' argument 2 names different: declaration 'line' definition 'ln'.
+int field_set_from_line(field_t*, const char *line);
+                                              ^
+src/libpage/field.c:74:49: note: Function 'field_set_from_line' argument 2 names different: declaration 'line' definition 'ln'.
+int field_set_from_line(field_t *f, const char *ln)
+                                                ^
+src/libpage/header.c:146:23: warning:inconclusive: Possible null pointer dereference: f [nullPointer]
+        if(strcasecmp(f->name, name) == 0)
+                      ^
+src/libpage/header.c:140:18: note: Assignment 'f=NULL', assigned value is 0
+    field_t *f = NULL;
+                 ^
+src/libpage/header.c:146:23: note: Null pointer dereference
+        if(strcasecmp(f->name, name) == 0)
+                      ^
+src/libpage/header.c:278:11: style: The scope of the variable 'e' can be reduced. [variableScope]
+    char *e, *eq, buf[BUFSZ];
+          ^
+src/libpage/header.c:313:17: style: The scope of the variable 'ln' can be reduced. [variableScope]
+    const char *ln;
+                ^
+src/libpage/header.c:314:12: style: The scope of the variable 'len' can be reduced. [variableScope]
+    size_t len, c;
+           ^
+src/libpage/header.c:46:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/header.c:121:1: style: Label 'notfound' is not used. [unusedLabel]
+notfound:
+^
+src/libpage/header.c:149:1: style: Label 'notfound' is not used. [unusedLabel]
+notfound:
+^
+src/libpage/header.c:264:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/header.c:358:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/header.c:385:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:94:16: style: The scope of the variable 'tok' can be reduced. [variableScope]
+    char *pp, *tok, *src, *buf = NULL;
+               ^
+src/libpage/request.c:94:22: style: The scope of the variable 'src' can be reduced. [variableScope]
+    char *pp, *tok, *src, *buf = NULL;
+                     ^
+src/libpage/request.c:801:14: style: The scope of the variable 'f' can be reduced. [variableScope]
+    field_t *f;
+             ^
+src/libpage/request.c:1156:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+src/libpage/request.c:1414:23: style: The scope of the variable 'rall' can be reduced. [variableScope]
+    size_t bound_len, rall;
+                      ^
+src/libpage/request.c:1529:14: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int eof, rc;
+             ^
+src/libpage/request.c:1672:10: style: The scope of the variable 'ln' can be reduced. [variableScope]
+    char ln[BUFSZ], *pp, *method, *uri, *proto;
+         ^
+src/libpage/request.c:1672:27: style: The scope of the variable 'method' can be reduced. [variableScope]
+    char ln[BUFSZ], *pp, *method, *uri, *proto;
+                          ^
+src/libpage/request.c:1672:36: style: The scope of the variable 'uri' can be reduced. [variableScope]
+    char ln[BUFSZ], *pp, *method, *uri, *proto;
+                                   ^
+src/libpage/request.c:1672:42: style: The scope of the variable 'proto' can be reduced. [variableScope]
+    char ln[BUFSZ], *pp, *method, *uri, *proto;
+                                         ^
+src/libpage/request.c:768:51: style: Checking if unsigned expression 'len=atoi(clen)' is less than zero. [unsignedLessThanZero]
+    dbg_err_if(clen == NULL || (len = atoi(clen)) < 0);
+                                                  ^
+src/libpage/request.c:122:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:378:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:429:1: style: Label 'err' is not used. [unusedLabel]
+err: /* ignore if it's not formatted properly */
+^
+src/libpage/request.c:469:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:530:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:566:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:589:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:663:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:679:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:709:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:773:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:795:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:816:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:838:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:882:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:892:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:990:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1036:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1142:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1188:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1262:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1297:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1342:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1398:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1511:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1556:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1624:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1719:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1847:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1881:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:1898:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/request.c:59:12: style: struct member 'request_s::padding' is never used. [unusedStructMember]
+    size_t padding;
+           ^
+src/libpage/request.c:1528:78: style: Unused variable: nl [unusedVariable]
+    char boundary[BOUNDARY_BUFSZ], nl_boundary[BOUNDARY_BUFSZ], buf[BUFSZ], *nl;
+                                                                             ^
+src/libpage/request.c:1578:12: style: Variable 'rc' is assigned a value that is never used. [unreadVariable]
+    int rc = HTTP_STATUS_BAD_REQUEST;
+           ^
+src/libpage/response.c:145:22: style: The scope of the variable 'date' can be reduced. [variableScope]
+    char buf[BUFSZ], date[DATESZ];
+                     ^
+src/libpage/response.c:291:14: style: The scope of the variable 'field' can be reduced. [variableScope]
+    field_t *field;
+             ^
+src/libpage/response.c:51:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:85:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:117:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:189:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:215:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:240:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:348:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:416:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:440:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:467:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:494:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:521:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:599:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/response.c:667:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/rsfilter.c:87:13: style: The scope of the variable 'c' can be reduced. [variableScope]
+    ssize_t c;
+            ^
+src/libpage/rsfilter.c:126:13: style: The scope of the variable 'c' can be reduced. [variableScope]
+    ssize_t c;
+            ^
+src/libpage/rsfilter.c:80:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/rsfilter.c:116:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/rsfilter.c:182:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/rsfilter.c:236:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_client.c:92:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libpage/ses_client.c:160:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libpage/ses_client.c:215:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_client.c:240:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_client.c:269:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_client.c:331:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libpage/ses_file.c:92:12: style: The scope of the variable 'now' can be reduced. [variableScope]
+    time_t now;
+           ^
+src/libpage/ses_file.c:46:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_file.c:67:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_file.c:123:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:71:12: style: The scope of the variable 'ppc' can be reduced. [variableScope]
+    ppc_t *ppc;
+           ^
+src/libpage/ses_mem.c:120:12: style: The scope of the variable 'new_size' can be reduced. [variableScope]
+    size_t new_size, old_found = 0;
+           ^
+src/libpage/ses_mem.c:284:12: style: The scope of the variable 'ppc' can be reduced. [variableScope]
+    ppc_t *ppc;
+           ^
+src/libpage/ses_mem.c:285:12: style: The scope of the variable 'esize' can be reduced. [variableScope]
+    size_t esize;
+           ^
+src/libpage/ses_mem.c:356:10: style: The scope of the variable 'buf' can be reduced. [variableScope]
+    char buf[BUFSZ];
+         ^
+src/libpage/ses_mem.c:357:12: style: The scope of the variable 'size' can be reduced. [variableScope]
+    size_t size;
+           ^
+src/libpage/ses_mem.c:359:12: style: The scope of the variable 'ppc' can be reduced. [variableScope]
+    ppc_t *ppc;
+           ^
+src/libpage/ses_mem.c:406:12: style: The scope of the variable 'ppc' can be reduced. [variableScope]
+    ppc_t *ppc;
+           ^
+src/libpage/ses_mem.c:473:17: style: The scope of the variable 'v' can be reduced. [variableScope]
+    const char *v;
+                ^
+src/libpage/ses_mem.c:378:72: style: Checking if unsigned expression 'size=ppc_read(ppc,ctx->pipc,&cmd,buf,BUFSZ)' is less than zero. [unsignedLessThanZero]
+        dbg_err_if((size = ppc_read(ppc, ctx->pipc, &cmd, buf, BUFSZ)) <= 0);
+                                                                       ^
+src/libpage/ses_mem.c:65:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:90:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:111:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:165:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:186:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:203:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:223:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:270:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:323:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:347:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:400:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:426:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:462:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/ses_mem.c:505:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:921:8: style: Redundant initialization for 'rc'. The initialized value is overwritten before it is read. [redundantInitialization]
+    rc = 0; /* success */
+       ^
+src/libpage/session.c:853:12: note: rc is initialized
+    int rc = ~0;
+           ^
+src/libpage/session.c:921:8: note: rc is overwritten
+    rc = 0; /* success */
+       ^
+src/libpage/session.c:167:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libpage/session.c:196:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libpage/session.c:216:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:261:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:297:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:329:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:347:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:382:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:418:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:490:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libpage/session.c:612:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:665:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:694:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:832:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libpage/session.c:922:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libpage/session.c:976:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libpage/session.c:851:19: style: Unused variable: pkey [unusedVariable]
+    unsigned char pkey[CODEC_CIPHER_KEY_BUFSZ];
+                  ^
+src/libpage/session.c:852:28: style: Unused variable: pksz [unusedVariable]
+    size_t nsz, vsz, eksz, pksz;
+                           ^
+src/libpage/session.c:741:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/session.c:787:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/var.c:54:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/var.c:87:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/var.c:201:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/var.c:224:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/var.c:285:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/vars.c:86:12: style: The scope of the variable 'v' can be reduced. [variableScope]
+    var_t *v;
+           ^
+src/libpage/vars.c:87:9: style: The scope of the variable 't' can be reduced. [variableScope]
+    int t;
+        ^
+src/libpage/vars.c:49:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/vars.c:67:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/vars.c:80:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/vars.c:116:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/vars.c:128:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/vars.c:273:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/vars.c:310:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libpage/vars.c:348:1: style: Label 'notfound' is not used. [unusedLabel]
+notfound:
+^
+src/libpage/vars.c:425:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/cyassl.c:35:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/cyassl.c:52:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/cyassl.c:71:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/cyassl.c:93:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/cyassl.c:117:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/cyassl.c:151:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls.c:68:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls.c:112:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libtls/tls.c:161:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libtls/tls.c:181:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls.c:197:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls.c:268:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libtls/tls.c:307:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls.c:484:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libtls/tls.c:511:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls.c:549:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libtls/tls.c:77:65: style:inconclusive: Function 'tls_load_ctx_args' argument 2 names different: declaration 'cargs' definition 'pcargs'. [funcArgNamesDifferent]
+static int tls_load_ctx_args (u_config_t *cfg, tls_ctx_args_t **pcargs)
+                                                                ^
+src/libtls/tls.c:48:65: note: Function 'tls_load_ctx_args' argument 2 names different: declaration 'cargs' definition 'pcargs'.
+static int tls_load_ctx_args (u_config_t *cfg, tls_ctx_args_t **cargs);
+                                                                ^
+src/libtls/tls.c:77:65: note: Function 'tls_load_ctx_args' argument 2 names different: declaration 'cargs' definition 'pcargs'.
+static int tls_load_ctx_args (u_config_t *cfg, tls_ctx_args_t **pcargs)
+                                                                ^
+src/libtls/tls.c:342:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls.c:373:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libtls/tls.c:396:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls_glue.c:113:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls_glue.c:191:1: style: Label 'end' is not used. [unusedLabel]
+end:
+^
+src/libtls/tls_glue.c:281:1: style: Label 'end' is not used. [unusedLabel]
+end:
+^
+src/libtls/tls_glue.c:339:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls_psk.c:103:10: style: The scope of the variable 'tag' can be reduced. [variableScope]
+    char tag[32];
+         ^
+src/libtls/tls_psk.c:51:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtls/tls_psk.c:90:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/parser.c:70:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/parser.c:200:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/parser.c:266:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/parser.c:95:10: style: Variable 'prev' is assigned a value that is never used. [unreadVariable]
+    prev = 0;
+         ^
+src/libtrans/parser.c:196:16: style: Variable 'buf[0]' is assigned a value that is never used. [unreadVariable]
+        buf[0] = 0; idx = 0;
+               ^
+src/libtrans/parser.c:196:25: style: Variable 'idx' is assigned a value that is never used. [unreadVariable]
+        buf[0] = 0; idx = 0;
+                        ^
+src/libtrans/trans_c.c:105:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/trans_c.c:205:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libtrans/trans_c.c:339:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/trans_c.c:360:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/trans_c.c:376:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/trans_c.c:393:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/trans_c.c:441:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/trans_c.c:474:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/trans_c.c:513:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/trans_c.c:555:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:729:33: style: Redundant condition: If 'cmd == '!'', the comparison 'cmd != 0' is always true. [redundantCondition]
+                    (cmd == '!' && cmd != 0 ? cmd : ' ')));
+                                ^
+src/libtrans/translat.c:127:15: style: The scope of the variable 'b' can be reduced. [variableScope]
+    kblock_t *b;
+              ^
+src/libtrans/translat.c:128:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+src/libtrans/translat.c:217:11: style: The scope of the variable 'str' can be reduced. [variableScope]
+    char *str;
+          ^
+src/libtrans/translat.c:218:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+src/libtrans/translat.c:652:10: style: The scope of the variable 'file' can be reduced. [variableScope]
+    char file[U_FILENAME_MAX];
+         ^
+src/libtrans/translat.c:653:9: style: The scope of the variable 'ln' can be reduced. [variableScope]
+    int ln;
+        ^
+src/libtrans/translat.c:654:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+src/libtrans/translat.c:698:10: style: The scope of the variable 'file' can be reduced. [variableScope]
+    char file[U_FILENAME_MAX];
+         ^
+src/libtrans/translat.c:80:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:91:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:119:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:142:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:156:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:193:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:210:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:257:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:273:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:298:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:341:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:400:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:480:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:642:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:688:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:752:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:790:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:831:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libtrans/translat.c:932:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/date.c:75:21: warning: sscanf() without field width limits can crash with huge input data. [invalidscanf]
+    dbg_err_if((i = sscanf(str, "%s %s %u %u:%u:%u %u", wday,
+                    ^
+src/libutils/date.c:122:21: warning: sscanf() without field width limits can crash with huge input data. [invalidscanf]
+    dbg_err_if((i = sscanf(str, "%[^,], %u%c%[^-]%c%u %u:%u:%u %s", wday,
+                    ^
+src/libutils/date.c:172:16: warning: sscanf() without field width limits can crash with huge input data. [invalidscanf]
+    dbg_err_if(sscanf(str, "%[^,], %u %s %u %u:%u:%u %s", wday,
+               ^
+src/libutils/date.c:93:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/date.c:145:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/date.c:195:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/date.c:265:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/path.c:95:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/pwd.c:65:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/pwd.c:78:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/pwd.c:93:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/timer.c:240:25: warning: Either the condition 'item' is redundant or there is possible null pointer dereference: item. [nullPointerRedundantCheck]
+        if(al->expire < item->expire)
+                        ^
+src/libutils/timer.c:243:8: note: Assuming that condition 'item' is not redundant
+    if(item)
+       ^
+src/libutils/timer.c:240:25: note: Null pointer dereference
+        if(al->expire < item->expire)
+                        ^
+src/libutils/timer.c:124:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/timer.c:141:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/timer.c:158:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/timer.c:216:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/timer.c:254:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/timer.c:287:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/timer.c:331:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/timer.c:262:16: style: Variable 'now' is assigned a value that is never used. [unreadVariable]
+    time_t now = time(0);
+               ^
+src/libutils/utils.c:245:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+src/libutils/utils.c:331:19: style: The scope of the variable 'c' can be reduced. [variableScope]
+    unsigned char c;
+                  ^
+src/libutils/utils.c:357:19: style: The scope of the variable 'c' can be reduced. [variableScope]
+    unsigned char c, last = 0;
+                  ^
+src/libutils/utils.c:420:19: style: The scope of the variable 'c' can be reduced. [variableScope]
+    unsigned char c;
+                  ^
+src/libutils/utils.c:448:19: style: The scope of the variable 'c' can be reduced. [variableScope]
+    unsigned char c;
+                  ^
+src/libutils/utils.c:566:9: style: The scope of the variable 'c' can be reduced. [variableScope]
+ size_t c, i, t;
+        ^
+src/libutils/utils.c:623:19: style: The scope of the variable 'c' can be reduced. [variableScope]
+    unsigned char c;
+                  ^
+src/libutils/utils.c:932:12: style: The scope of the variable 'len' can be reduced. [variableScope]
+    size_t len;
+           ^
+src/libutils/utils.c:957:10: style: The scope of the variable 'prev' can be reduced. [variableScope]
+    char prev, c = 0;
+         ^
+src/libutils/utils.c:1038:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+    size_t c, i, t;
+           ^
+src/libutils/utils.c:1165:17: style: The scope of the variable 'mm' can be reduced. [variableScope]
+    mime_map_t *mm;
+                ^
+src/libutils/utils.c:1198:17: style: The scope of the variable 'mm' can be reduced. [variableScope]
+    mime_map_t *mm;
+                ^
+src/libutils/utils.c:273:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:351:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:474:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:560:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:614:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:709:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:741:1: style: Label 'err' is not used. [unusedLabel]
+err: /* fall through */
+^
+src/libutils/utils.c:767:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:825:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:868:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/utils.c:911:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:951:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:1123:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:1148:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/libutils/utils.c:1180:1: style: Label 'notfound' is not used. [unusedLabel]
+notfound:
+^
+src/libutils/utils.c:1210:1: style: Label 'notfound' is not used. [unusedLabel]
+notfound:
+^
+src/libutils/utils.c:1252:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:63:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:76:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:1391:13: style: The scope of the variable 'rd' can be reduced. [variableScope]
+    ssize_t rd;
+            ^
+src/libutils/utils.c:1427:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:1318:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/libutils/utils.c:1377:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:252:1: style: Label 'err' is not used. There is #if in function body so the label might be used in code that is removed by the preprocessor. [unusedLabelConfiguration]
+err:
+^
+src/tools/klone/main.c:270:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:363:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:384:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:487:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:510:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:547:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:559:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:594:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:627:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:647:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/main.c:672:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/pm.c:34:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/pm.c:53:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/pm.c:72:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/pm.c:95:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/pm.c:104:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/tools/klone/pm.c:121:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+test/misc.c:87:17: style: The scope of the variable 'src' can be reduced. [variableScope]
+    const char *src, *exp;
+                ^
+test/misc.c:87:23: style: The scope of the variable 'exp' can be reduced. [variableScope]
+    const char *src, *exp;
+                      ^
+test/misc.c:89:13: style: The scope of the variable 'wr' can be reduced. [variableScope]
+    ssize_t wr;
+            ^
+test/misc.c:90:12: style: The scope of the variable 'ssz' can be reduced. [variableScope]
+    int i, ssz, esz;
+           ^
+test/misc.c:90:17: style: The scope of the variable 'esz' can be reduced. [variableScope]
+    int i, ssz, esz;
+                ^
+test/misc.c:55:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+test/misc.c:80:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+test/misc.c:111:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+test/misc.c:140:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+test/misc.c:165:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+test/path.c:53:22: style: Condition 'buf' is always true [knownConditionTrueFalse]
+    if(src && exp && buf)
+                     ^
+test/path.c:52:1: style: Label 'err' is not used. [unusedLabel]
+err:
+^
+src/kloned/entry.c:329:0: style: The function 'WinMain' is never used. [unusedFunction]
+
+^
+src/kloned/atom.c:177:0: style: The function 'atoms_free' is never used. [unusedFunction]
+
+^
+src/libemb/emb.c:147:0: style: The function 'emb_list' is never used. [unusedFunction]
+
+^
+src/libemb/emb.c:67:0: style: The function 'emb_register' is never used. [unusedFunction]
+
+^
+src/libemb/emb.c:84:0: style: The function 'emb_unregister' is never used. [unusedFunction]
+
+^
+src/libhook/child_nfy.c:21:0: style: The function 'hook_child_init' is never used. [unusedFunction]
+
+^
+src/libhook/child_nfy.c:47:0: style: The function 'hook_child_term' is never used. [unusedFunction]
+
+^
+src/libhook/req.c:17:0: style: The function 'hook_request' is never used. [unusedFunction]
+
+^
+src/libhook/server_nfy.c:16:0: style: The function 'hook_server_init' is never used. [unusedFunction]
+
+^
+src/libhook/server_nfy.c:66:0: style: The function 'hook_server_loop' is never used. [unusedFunction]
+
+^
+src/libhook/server_nfy.c:41:0: style: The function 'hook_server_term' is never used. [unusedFunction]
+
+^
+src/libio/iofd.c:125:0: style: The function 'io_fd_get_d' is never used. [unusedFunction]
+
+^
+src/libio/iomem.c:124:0: style: The function 'io_mem_get_buf' is never used. [unusedFunction]
+
+^
+src/libio/iomem.c:112:0: style: The function 'io_mem_get_bufsz' is never used. [unusedFunction]
+
+^
+src/libio/io.c:1090:0: style: The function 'io_prv_create' is never used. [unusedFunction]
+
+^
+src/libio/iossl.c:30:0: style: The function 'io_ssl_get_SSL' is never used. [unusedFunction]
+
+^
+src/libio/io.c:43:0: style: The function 'io_type' is never used. [unusedFunction]
+
+^
+src/tools/klone/main.c:370:0: style: The function 'is_cpp' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:1060:0: style: The function 'is_nl' is never used. [unusedFunction]
+
+^
+src/libhttp/sup_kilt.c:35:0: style: The function 'kilt_run_script' is never used. [unusedFunction]
+
+^
+src/libhttp/sup_kilt.c:57:0: style: The function 'kilt_show_params' is never used. [unusedFunction]
+
+^
+src/tools/klone/pm.c:78:0: style: The function 'pm_remove' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:254:0: style: The function 'request_get_arg' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:200:0: style: The function 'request_get_args' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:160:0: style: The function 'request_get_cookies' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:2024:0: style: The function 'request_get_field' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:279:0: style: The function 'request_get_getarg' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:217:0: style: The function 'request_get_getargs' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:304:0: style: The function 'request_get_postarg' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:234:0: style: The function 'request_get_postargs' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:1754:0: style: The function 'request_get_protocol' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:1323:0: style: The function 'request_get_uploaded_file' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:1211:0: style: The function 'request_get_uploads' is never used. [unusedFunction]
+
+^
+src/libpage/request.c:1795:0: style: The function 'request_print' is never used. [unusedFunction]
+
+^
+src/libpage/response.c:108:0: style: The function 'response_enable_caching' is never used. [unusedFunction]
+
+^
+src/libpage/response.c:700:0: style: The function 'response_get_field' is never used. [unusedFunction]
+
+^
+src/kloned/server.c:1139:0: style: The function 'server_foreach_memlog_line' is never used. [unusedFunction]
+
+^
+src/kloned/ppc_nop.c:30:0: style: The function 'server_ppc_cmd_nop' is never used. [unusedFunction]
+
+^
+src/libpage/session.c:682:0: style: The function 'session_del' is never used. [unusedFunction]
+
+^
+src/libpage/ses_file.c:129:0: style: The function 'session_file_module_term' is never used. [unusedFunction]
+
+^
+src/libpage/session.c:550:0: style: The function 'session_get' is never used. [unusedFunction]
+
+^
+src/libpage/session.c:765:0: style: The function 'session_get_cipher_key' is never used. [unusedFunction]
+
+^
+src/libpage/session.c:571:0: style: The function 'session_get_id' is never used. [unusedFunction]
+
+^
+src/libpage/session.c:590:0: style: The function 'session_set' is never used. [unusedFunction]
+
+^
+src/libpage/session.c:718:0: style: The function 'session_set_cipher_key' is never used. [unusedFunction]
+
+^
+src/libutils/utils.c:928:0: style: The function 'u_fgetline' is never used. [unusedFunction]
+
+^
+src/libutils/utils.c:1013:0: style: The function 'u_file_exists' is never used. [unusedFunction]
+
+^
+src/libutils/utils.c:1230:0: style: The function 'u_io_unzip_copy' is never used. [unusedFunction]
+
+^
+src/libutils/utils.c:1100:0: style: The function 'u_md5io' is never used. [unusedFunction]
+
+^
+src/libutils/utils.c:955:0: style: The function 'u_printf_ccstr' is never used. [unusedFunction]
+
+^
+src/libutils/utils.c:198:0: style: The function 'u_strnstr' is never used. [unusedFunction]
+
+^
+src/libpage/var.c:29:0: style: The function 'var_get_name_s' is never used. [unusedFunction]
+
+^
+src/libpage/var.c:191:0: style: The function 'var_set' is never used. [unusedFunction]
+
+^
+src/libpage/vars.c:284:0: style: The function 'vars_add_strvar' is never used. [unusedFunction]
+
+^
+src/libpage/vars.c:179:0: style: The function 'vars_countn' is never used. [unusedFunction]
+
+^
+src/libpage/vars.c:490:0: style: The function 'vars_get_value' is never used. [unusedFunction]
+
+^
+src/libpage/vars.c:442:0: style: The function 'vars_get_value_i' is never used. [unusedFunction]
+
+^
+src/libpage/vars.c:39:0: style: The function 'vars_get_value_s' is never used. [unusedFunction]
+
+^
+src/libpage/vars.c:415:0: style: The function 'vars_geti_value_s' is never used. [unusedFunction]
+
+^
+webapp/webapp.c:4:0: style: The function 'wa_test' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
